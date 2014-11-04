@@ -31,3 +31,5 @@ set number
 :nmap ,e :b#<CR>
 " syntastic bindings 
 :nmap ; :CtrlPBuffer<CR>
+" Nerdtree Bindings
+:nmap ,t :NERDTreeToggle<CR>
