@@ -29,3 +29,5 @@ set number
 :nmap ,n :bnext<CR>
 :nmap ,b :bprev<CR>
 :nmap ,e :b#<CR>
+" syntastic bindings 
+:nmap ; :CtrlPBuffer<CR>
