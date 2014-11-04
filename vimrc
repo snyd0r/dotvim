@@ -1,3 +1,5 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 " use only Spaces
 set expandtab
 " indent with two spaces
