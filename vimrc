@@ -33,3 +33,5 @@ set number
 :nmap ; :CtrlPBuffer<CR>
 " Nerdtree Bindings
 :nmap ,t :NERDTreeToggle<CR>
+" Powerline Settings
+set laststatus=2
