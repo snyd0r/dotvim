@@ -62,3 +62,7 @@ set laststatus=2
 
 " Gundo Bindings
 nnoremap <F5> :GundoToggle<CR>
+
+" unimpaired-vim Bindings
+nmap < [
+nmap > ]
