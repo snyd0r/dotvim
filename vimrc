@@ -59,3 +59,6 @@ set laststatus=2
 " Toggle Pastemode
 :nmap ,p :set paste<CR>
 :nmap ,P :set nopaste<CR>
+
+" Gundo Bindings
+nnoremap <F5> :GundoToggle<CR>
