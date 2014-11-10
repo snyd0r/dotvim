@@ -11,7 +11,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
-" nativ indent detection
+" native indent detection
 set autoindent
 set smartindent
 
