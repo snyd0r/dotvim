@@ -23,3 +23,6 @@
 [submodule "bundle/puppet"]
 	path = bundle/puppet
 	url = https://github.com/rodjek/vim-puppet.git
+[submodule "bundle/vim-ansible-yaml"]
+	path = bundle/vim-ansible-yaml
+	url = https://github.com/chase/vim-ansible-yaml.git

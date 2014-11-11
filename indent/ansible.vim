@@ -1,0 +1,1 @@
+/Users/snyd0r/.vim/bundle/vim-ansible-yaml/indent/ansible.vim
