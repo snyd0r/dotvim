@@ -21,7 +21,7 @@ filetype plugin indent on
 " Syntax & Color
 syntax on 
 set t_Co=256
-colorscheme delek
+colorscheme torte 
 
 " Show LineNumbers
 set number
@@ -65,4 +65,4 @@ nnoremap <F5> :GundoToggle<CR>
 
 " unimpaired-vim Bindings
 nmap < [
-nmap > ]
+nmap - ]
