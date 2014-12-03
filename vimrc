@@ -44,9 +44,6 @@ map <C-e> :b#<CR>
 :nmap ,n :tabnext<CR>
 :nmap ,b :tabprevious<CR>
 
-" syntastic bindings 
-:nmap ; :CtrlPBuffer<CR>
-
 " Nerdtree Bindings
 map <C-t> :NERDTreeToggle<CR>
 
