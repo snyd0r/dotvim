@@ -1,3 +1,4 @@
+
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -50,13 +51,14 @@ map <C-e> :b#<CR>
 map <C-t> :NERDTreeToggle<CR>
 
 " Autoload NERDTree if no file is specified
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Powerline Settings
 set laststatus=2
 
 " Toggle Pastemode
+set pastetoggle=<F2>
 :nmap ,p :set paste<CR>
 :nmap ,P :set nopaste<CR>
 
