@@ -1,13 +1,17 @@
 Installation 
 
-      git clone git://github.com/snyd0r/dotvim.git ~/.vim
+  git clone git://github.com/snyd0r/dotvim.git ~/.vim
 
 Init & Update Submodules
 
-      git submodule init && git submodule update
+  git clone https://github.com/gmarik/Vundle.vim.git bundle/vundle 
+
+Install your plugins with 
+ 
+ vim +BundleInstall +qall.
 
 Create Symlinks
       
-      ln -s ~/.vim/vimrc ~/.vimrc
+  ln -s ~/.vim/vimrc ~/.vimrc
 
 
