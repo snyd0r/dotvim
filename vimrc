@@ -7,19 +7,27 @@ set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " Bundles for vundle
+" Core Plugins
 Bundle 'gmarik/vundle'
-" Better status line 
-Bundle 'bling/vim-airline'
-" ctrlp file buffer
+Bundle 'flazz/vim-colorschemes'
 Bundle 'kien/ctrlp.vim'
+" vim main plugins
+Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'rodjek/vim-puppet'
 Bundle 'scrooloose/syntastic'
 Bundle 'godlygeek/tabular'
-Bundle 'chase/vim-ansible-yaml'
 Bundle 'tpope/vim-unimpaired'
+
+" rarely used bundles
+
+
+" vim language bundles
+Bundle 'rodjek/vim-puppet'
+Bundle 'chase/vim-ansible-yaml'
+
+" experimental bundles 
 
 " Store pathogen itself in bundle/
 runtime! bundle/pathogen/autoload/pathogen.vim
@@ -50,7 +58,7 @@ filetype plugin indent on
 " Syntax & Color
 syntax on 
 set t_Co=256
-colorscheme torte 
+colorscheme candyman 
 
 " Show LineNumbers
 set number
