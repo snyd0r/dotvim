@@ -3,7 +3,7 @@ set nocompatible
 
 " Required Vundle setup
 filetype off
-set runtimepath+=~/.vim/bundle/vundle.vim
+set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " Bundles for vundle

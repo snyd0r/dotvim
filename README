@@ -8,7 +8,7 @@ Init & Update Submodules
 
 Install your plugins with 
  
- vim +BundleInstall +qall.
+ vim +BundleInstall +qall
 
 Create Symlinks
       
