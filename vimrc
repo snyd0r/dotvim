@@ -127,6 +127,9 @@ nnoremap <leader>ra :tabdo exec "windo e!"<CR>
 " find/remove trailing whitespaces
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
+" Save write protected file 
+cmap w!! w !sudo tee % >/dev/null
+
 " map next-previous jumps ?!
 "nnoremap <leader>m <C-o>
 "nnoremap <leader>. <C-i>
@@ -152,5 +155,5 @@ nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
 " Switch off :match highlighting.
 :match
-:nnoremap <Leader>wn :match ExtraWhitespace /^\s* \s*\<Bar>\s\+$/<CR>
-:nnoremap <Leader>wf :match<CR>
+:nnoremap <Leader>sw :match ExtraWhitespace /^\s* \s*\<Bar>\s\+$/<CR>
+:nnoremap <Leader>cw :match<CR>
