@@ -78,8 +78,8 @@ nnoremap <leader>e :b#<CR>
 :nmap <C-e> :e#<CR>
 
 " Tab movement
-"nnoremap <leader>n :tabnext<CR>
-"nnoremap <leader>b :tabprevious<CR>
+nnoremap <leader>z :tabnext<CR>
+nnoremap <leader>u :tabprevious<CR>
 
 " Nerdtree Bindings
 nnoremap <leader>t  :NERDTreeToggle<CR>
@@ -97,8 +97,6 @@ nnoremap <leader>t  :NERDTreeToggle<CR>
 :let g:ctrlp_dotfiles = 0
 :let g:ctrlp_switch_buffer = 0
 
-" airline Settings
-set laststatus=2
 
 " Toggle Pastemode
 set pastetoggle=<F2>
@@ -137,6 +135,23 @@ nnoremap <leader>w :write<CR>
 " change Bracket to something useful
 nnoremap ü <C-]>
 nnoremap Ü <C-O>
+
+" airline config
+if !exists("g:airline_symbols")
+  let g:airline_symbols = {}
+endif
+
+set laststatus=2
+let g:airline_theme="powerlineish"
+let g:airline_powerline_fonts=0
+"" let g:airline_section_warning = airline#section#create([ "syntastic" ])
+let g:airline#extensions#branch#empty_message  =  "No SCM"
+let g:airline#extensions#whitespace#enabled    =  0
+let g:airline#extensions#syntastic#enabled     =  1
+let g:airline#extensions#tabline#enabled       =  1
+let g:airline#extensions#tabline#tab_nr_type   =  1 " tab number
+let g:airline#extensions#tabline#fnamecollapse =  1 " /a/m/model.rb
+let g:airline#extensions#hunks#non_zero_only   =  1 " git gutter
 
 " map next-previous jumps ?!
 "nnoremap <leader>m <C-o>
