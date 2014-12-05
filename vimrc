@@ -127,8 +127,16 @@ nnoremap <leader>ra :tabdo exec "windo e!"<CR>
 " find/remove trailing whitespaces
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
-" Save write protected file 
+" Save write protected file
 cmap w!! w !sudo tee % >/dev/null
+
+" More usefull quickbindings
+nnoremap <leader>c :close<CR>
+nnoremap <leader>w :write<CR>
+
+" change Bracket to something useful
+nnoremap ü <C-]>
+nnoremap Ü <C-O>
 
 " map next-previous jumps ?!
 "nnoremap <leader>m <C-o>
