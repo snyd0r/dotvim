@@ -189,4 +189,7 @@ nnoremap gp `[v`]
 " Yankring bindings 
 nnoremap <leader>yr :YRShow<CR>
 
+" Yaml Settings
+let g:ansible_options = {'ignore_blank_lines': 0}
+
 " experimental vimrc commands
