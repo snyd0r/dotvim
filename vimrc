@@ -35,6 +35,11 @@ runtime! bundle/pathogen/autoload/pathogen.vim
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
 
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
 " change the mapleader from \ to ,
 let mapleader=","
 
@@ -76,10 +81,6 @@ nnoremap <leader>b :bprev<CR>
 nnoremap <leader>e :b#<CR>
 :nmap <C-e> :e#<CR>
 
-" Tab movement
-nnoremap <leader>z :tabnext<CR>
-nnoremap <leader>u :tabprevious<CR>
-
 " Nerdtree Bindings
 nnoremap <leader>t  :NERDTreeToggle<CR>
 
@@ -95,25 +96,25 @@ nnoremap <leader>t  :NERDTreeToggle<CR>
 :let g:ctrlp_working_path_mode = 0
 :let g:ctrlp_dotfiles = 0
 :let g:ctrlp_switch_buffer = 0
-
+nnoremap <leader>ru :CtrlPMRU<CR>
 
 " Toggle Pastemode
 set pastetoggle=<F2>
-":nmap ,p :set paste<CR>
-":nmap ,P :set nopaste<CR>
 
 " Gundo Bindings
 nnoremap <F5> :GundoToggle<CR>
 
+" Change Brackets to something that works on german keyboards
+nmap - [
+nmap + ]
+
 " unimpaired-vim Bindings
-" nmap + [
-" nmap - ]
 nnoremap <leader>c :cnext<CR>
 nnoremap <leader>C :cprev<CR>
 
 " open vimrc
-nnoremap <leader>v :e ~/.vim/vimrc<CR>
-nnoremap <leader>V :tabnew ~/.vim/vimrc<CR>
+nnoremap <leader>v :e $MYVIMRC<CR>
+nnoremap <leader>V :tabnew $MYVIMRC<CR>
 
 " Syntastic check
 nnoremap <leader>l :SyntasticCheck<CR>
@@ -179,3 +180,8 @@ let g:airline#extensions#hunks#non_zero_only   =  1 " git gutter
 :match
 :nnoremap <Leader>sw :match ExtraWhitespace /^\s* \s*\<Bar>\s\+$/<CR>
 :nnoremap <Leader>cw :match<CR>
+
+" visual reselect of just pasted
+nnoremap gp `[v`]
+
+" experimental vimrc commands
