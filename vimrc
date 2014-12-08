@@ -136,7 +136,7 @@ nnoremap <leader>w :write<CR>
 nnoremap ü <C-]>
 nnoremap Ü <C-O>
 
-" airline config
+" airline / tmuxline config
 if !exists("g:airline_symbols")
   let g:airline_symbols = {}
 endif
@@ -144,14 +144,15 @@ endif
 set laststatus=2
 let g:airline_theme="powerlineish"
 let g:airline_powerline_fonts=0
-"" let g:airline_section_warning = airline#section#create([ "syntastic" ])
+let g:airline_section_warning = airline#section#create([ "syntastic" ])
 let g:airline#extensions#branch#empty_message  =  "No SCM"
-let g:airline#extensions#whitespace#enabled    =  0
+let g:airline#extensions#whitespace#enabled    =  1
 let g:airline#extensions#syntastic#enabled     =  1
 let g:airline#extensions#tabline#enabled       =  1
 let g:airline#extensions#tabline#tab_nr_type   =  1 " tab number
 let g:airline#extensions#tabline#fnamecollapse =  1 " /a/m/model.rb
 let g:airline#extensions#hunks#non_zero_only   =  1 " git gutter
+let g:tmuxline_powerline_separators = 0
 
 " map next-previous jumps ?!
 "nnoremap <leader>m <C-o>
