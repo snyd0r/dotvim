@@ -68,8 +68,7 @@ set number
 :set ignorecase
 :set smartcase
 :set hlsearch
-":nmap ,s :nohlsearch<CR>
-":nmap ,S :set hlsearch<CR>
+nmap <silent> ,/ :nohlsearch<CR>
 
 " buffer movement
 nnoremap <leader>n :bnext<CR>
