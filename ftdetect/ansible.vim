@@ -1,1 +1,0 @@
-/Users/snyd0r/.vim/bundle/vim-ansible-yaml/ftdetect/ansible.vim
