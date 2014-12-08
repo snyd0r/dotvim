@@ -19,6 +19,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'vim-scripts/YankRing.vim'
 
 " rarely used bundles
 
@@ -79,7 +80,7 @@ nmap <silent> ,/ :nohlsearch<CR>
 nnoremap <leader>n :bnext<CR>
 nnoremap <leader>b :bprev<CR>
 nnoremap <leader>e :b#<CR>
-:nmap <C-e> :e#<CR>
+nmap <C-e> :e#<CR>
 
 " Nerdtree Bindings
 nnoremap <leader>t  :NERDTreeToggle<CR>
@@ -109,8 +110,8 @@ nmap - [
 nmap + ]
 
 " unimpaired-vim Bindings
-nnoremap <leader>c :cnext<CR>
-nnoremap <leader>C :cprev<CR>
+nnoremap <leader>ü :cnext<CR>
+nnoremap <leader>Ü :cprev<CR>
 
 " open vimrc
 nnoremap <leader>v :e $MYVIMRC<CR>
@@ -184,5 +185,8 @@ let g:tmuxline_powerline_separators = 0
 
 " visual reselect of just pasted
 nnoremap gp `[v`]
+
+" Yankring bindings 
+nnoremap <leader>yr :YRShow<CR>
 
 " experimental vimrc commands
