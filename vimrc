@@ -20,7 +20,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/YankRing.vim'
-
+Bundle 'nelstrom/vim-markdown-folding'
 " rarely used bundles
 
 
@@ -187,9 +187,15 @@ let g:tmuxline_powerline_separators = 0
 nnoremap gp `[v`]
 
 " Yankring bindings 
-nnoremap <leader>yr :YRShow<CR>
+nnoremap <leader>ys :YRShow<CR>
+nnoremap <leader>yc :YRClear<CR>
+nnoremap <leader>yt :YRToggle<CR>
 
 " Yaml Settings
 let g:ansible_options = {'ignore_blank_lines': 0}
 
 " experimental vimrc commands
+
+" Folding bindings / Space to toggle folds
+nnoremap <Space> za
+vnoremap <Space> za
