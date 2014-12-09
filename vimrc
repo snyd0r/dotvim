@@ -44,9 +44,6 @@ endif
 " change the mapleader from \ to ,
 let mapleader=","
 
-" Every Buffer can be hidden
-set hidden
-
 " use only Spaces
 set expandtab
 
@@ -81,6 +78,15 @@ nnoremap <leader>n :bnext<CR>
 nnoremap <leader>b :bprev<CR>
 nnoremap <leader>e :b#<CR>
 nmap <C-e> :e#<CR>
+
+" Every Buffer can be hidden
+set hidden
+
+" reload all open buffers
+nnoremap <leader>ra :tabdo exec "windo e!"<CR>
+
+" close buffer
+nnoremap <leader>bd :bd<CR>
 
 " Nerdtree Bindings
 nnoremap <leader>t  :NERDTreeToggle<CR>
@@ -119,9 +125,6 @@ nnoremap <leader>V :tabnew $MYVIMRC<CR>
 
 " Syntastic check
 nnoremap <leader>l :SyntasticCheck<CR>
-
-" reload all open buffers
-nnoremap <leader>ra :tabdo exec "windo e!"<CR>
 
 " find/remove trailing whitespaces
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
