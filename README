@@ -13,7 +13,3 @@ Install Vundle to ~/.vim/bundle
 Install your plugins with 
  
  vim +BundleInstall +qall
-
-Create Symlinks
-      
-  ln -s ~/.vim/vimrc ~/.vimrc
