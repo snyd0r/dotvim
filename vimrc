@@ -203,3 +203,6 @@ let g:ansible_options = {'ignore_blank_lines': 0}
 " Folding bindings / Space to toggle folds
 nnoremap <Space> za
 vnoremap <Space> za
+
+" set cursorline
+nnoremap <leader>cl :set cursorline<CR>
