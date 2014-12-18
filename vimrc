@@ -21,6 +21,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'nelstrom/vim-markdown-folding'
+Bundle 'nathanaelkane/vim-indent-guides'
 " rarely used bundles
 
 
@@ -67,6 +68,7 @@ filetype plugin indent on
 syntax on
 set t_Co=256
 colorscheme candyman
+set background=dark
 
 " Show LineNumbers
 set number
