@@ -143,10 +143,6 @@ cmap w!! w !sudo tee % >/dev/null
 nnoremap <leader>c :close<CR>
 nnoremap <leader>w :write<CR>
 
-" change Bracket to something useful
-nnoremap ü <C-]>
-nnoremap Ü <C-O>
-
 " airline / tmuxline config
 if !exists("g:airline_symbols")
   let g:airline_symbols = {}
