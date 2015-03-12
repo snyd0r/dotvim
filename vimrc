@@ -119,7 +119,7 @@ set pastetoggle=<F2>
 nnoremap <F5> :GundoToggle<CR>
 
 " Change Brackets to something that works on german keyboards
-nmap - [
+nmap # [
 nmap + ]
 
 " unimpaired-vim Bindings
