@@ -125,6 +125,8 @@ nmap + ]
 " unimpaired-vim Bindings
 nnoremap <leader>ü :cnext<CR>
 nnoremap <leader>Ü :cprev<CR>
+nnoremap +Ü :cfirst<CR>
+nnoremap +ü :clast<CR>
 
 " open vimrc
 nnoremap <leader>v :e $MYVIMRC<CR>
